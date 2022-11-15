@@ -18,3 +18,15 @@ function triangle_values () {
     document.write('<p><a href="./funciones.html">Volver</a></p>')
 
    }
+
+function isTriangle (){
+
+    var a = Number(prompt("indicar el primer lado"))
+    var b = Number(prompt("indicar el segundo lado"))
+    var c = Number(prompt("indicar el tercer lado"))
+
+    if (((a + b) > c) && ((a + c)> b) && ((b + c)> a)) {
+        return true
+    } else {
+        return false
+    }
