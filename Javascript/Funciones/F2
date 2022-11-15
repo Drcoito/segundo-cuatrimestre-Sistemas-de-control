@@ -1,0 +1,43 @@
+var R;
+var L;
+var C;
+var F;
+var dospi = Math.PI * 2;
+var M;
+var H;
+const  G = 9.8
+
+function XL( F, L){
+    ResultadoXL= dospi * F * L;
+return ResultadoXL;
+}	
+function  XC(F,C){
+
+    ResultadoXC= 1/ (dospi * F * C);
+ return ResultadoXC;
+}
+
+ function square(x){
+return x*x
+}
+function Z(R,C,L,F){
+    CuadradoZ= (square(R) + square((XL(F,L)-XC(F,C))));
+    ResultadoZ= Math.sqrt (CuadradoZ);
+return ResultadoZ;
+}
+function fi(R,C,L,F){
+    Resultadofi=Math.atan (XL(F,L)-XC(F,C)/R);
+return Resultadofi; 
+}
+function circuitoRLC(){
+    R = Number(prompt("Ingresar la resistencia "))
+    L= Number(prompt("Ingresar la inductancia "))
+    C= Number(prompt("Ingresar la capacitancia"))
+    F= Number(prompt("Ingresar la frencuencia"));
+
+    document.write ("<br/>El valor de XC es " +XC(F,C))
+    document.write ("<br/>El valor de XL es " +XL(F,L))
+    document.write ("<br/>El valor de Z es " +Z(R,C,L,F))
+    document.write ("<br/>El valor de FI es " +fi(R,C,L,F));
+    document.write('<p><a href="./funciones.html">Volver</a></p>')
+}
