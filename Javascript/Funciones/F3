@@ -1,0 +1,19 @@
+function EP( M,H,G){
+    ResultadoEP= M*G*H;
+    return ResultadoEP;
+}	
+function  V(M,H,G){
+
+	ResultadoV= 2*EP(M,H,G)/M;
+	RaizV= Math.sqrt (ResultadoV) 
+ 	return RaizV;
+}
+function energia(){
+    M = Number(prompt("Ingresar la masa en KG "))
+    H = Number(prompt("Ingrese la altura en M "))
+
+    document.write ("<br/>El valor de la energia potencial " +EP(M,H,G))
+    document.write ("<br/>El valor de la energia cinematica en 0 es " +EP(M,H,G))
+    document.write ("<br/> valor de la velocidad es " +V(M,H,G))
+    document.write('<p><a href="./funciones.html">Volver</a></p>')
+}
