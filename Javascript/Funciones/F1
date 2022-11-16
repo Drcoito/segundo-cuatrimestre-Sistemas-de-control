@@ -1,12 +1,11 @@
-function sayHello() {
-    document.write ("<br/>Hello there!");
-    document.write('<p><a href="./funciones.html">Volver</a></p>')
-} 
 
+function square(x) { 
+return x*x;
+ }
 function triangle_values () {
     var a = Number(prompt("indicar la base"))
     var b = Number(prompt("indicar la altura"))
-    function square(x) { return x*x; }
+    
    
     var hypotenuse  = Math.sqrt(square(a) + square(b));
     var perimeter = a + b + hypotenuse
