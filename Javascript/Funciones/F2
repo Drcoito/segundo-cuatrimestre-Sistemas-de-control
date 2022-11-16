@@ -1,3 +1,6 @@
+<html>
+<head>
+<script type="text/javascript">
 var R;
 var L;
 var C;
@@ -11,12 +14,13 @@ function XL( F, L){
     ResultadoXL= dospi * F * L;
 return ResultadoXL;
 }	
+XL()
 function  XC(F,C){
 
     ResultadoXC= 1/ (dospi * F * C);
  return ResultadoXC;
 }
-
+XC()
  function square(x){
 return x*x
 }
@@ -25,10 +29,12 @@ function Z(R,C,L,F){
     ResultadoZ= Math.sqrt (CuadradoZ);
 return ResultadoZ;
 }
+Z()
 function fi(R,C,L,F){
     Resultadofi=Math.atan (XL(F,L)-XC(F,C)/R);
 return Resultadofi; 
 }
+fi()
 function circuitoRLC(){
     R = Number(prompt("Ingresar la resistencia "))
     L= Number(prompt("Ingresar la inductancia "))
@@ -41,3 +47,7 @@ function circuitoRLC(){
     document.write ("<br/>El valor de FI es " +fi(R,C,L,F));
     document.write('<p><a href="./funciones.html">Volver</a></p>')
 }
+circuitoRLC()
+</script>
+</head>
+</html>
