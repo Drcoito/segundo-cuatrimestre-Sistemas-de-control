@@ -1,31 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla de multiplicar</title>
-</head>
+<html>
 <body>
-    <h1>Tablas de multiplicar</h1>
-    <div id="container"></div>
+<script type="text/javascript">
+<!--
+var a = Number(prompt("Ingrese numero para ver la tabla de multiplicacion"));
+var count= -1
 
-    <script>
-        const $container = document.getElementById("container")
-        const num = Number(prompt("Dame un numero"))
-        let results = []
-
-        for (let i = 0; i <= 9; i++) {
-            results.push(num * i)
-        }
-
-        const mappedResults = results.map((result, index) => {
-            const p = document.createElement('p')
-            p.innerText = `${num}x${index} = ${result}`
-            return p
-        })
-
-        $container.append(...mappedResults)
-    </script>
+document.write("comenzado ciclo <br/>");
+while (count < 10){
+ count++;
+ var multi= a * count   
+  document.write(+a);
+  document.write ("x");
+  document.write (+count);
+  document.write ("=    ");
+  document.write (+multi);
+  document.write ("<br/>")
+}
+document.write( "The end...0o0");
+//-->
+</script>
 </body>
-</html>
+</html
