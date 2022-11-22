@@ -6,9 +6,9 @@
     </center>
     </head>
     <body>
-        <table>
-            <table border="1">
-               
+        <table border="1">
+            <center>
+    
             <tr>
                 <th>ROL</th>
                 <th>NOMBRE</th>
@@ -21,6 +21,10 @@
                 <td>Padre</td>
                 <td>Marcelo</td>
             </tr>
+            <tr>
+                <td>Mascotas</td>
+                <td>Juando Gandalf Simba</td>
+               </tr>
         </table>
     </body>
 </html>
