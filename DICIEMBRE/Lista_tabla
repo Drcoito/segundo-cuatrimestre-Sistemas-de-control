@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <center>
+       <title> LISTA FAMILIARES CON TABLA </title>
+    </center>
+    </head>
+    <body>
+        <table>
+            <table border="1">
+               
+            <tr>
+                <th>ROL</th>
+                <th>NOMBRE</th>
+            </tr>
+            <tr>
+                <td>Madre</td>
+                <td>Marcela</td>
+            </tr>
+            <tr>
+                <td>Padre</td>
+                <td>Marcelo</td>
+            </tr>
+        </table>
+    </body>
+</html>
